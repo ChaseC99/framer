@@ -1,0 +1,16 @@
+#profile-pic {
+    display:block;
+    max-width: 100%;
+}
+
+#framed {
+    margin: 50px auto;
+    display: block;
+    border-style: solid;
+    border-width: thin;
+}
+
+.crop-container {
+    max-width: 50%;
+    margin: 50px auto;
+}

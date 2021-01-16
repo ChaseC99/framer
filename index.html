@@ -1,0 +1,17 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="framer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css" integrity="sha512-w+u2vZqMNUVngx+0GVZYM21Qm093kAexjueWOv9e9nIeYJb1iEfiHC7Y+VvmP/tviQyA5IR32mwN/5hTEJx6Ng==" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js" integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw==" crossorigin="anonymous"></script>
+    </header>
+    <body>
+        <div class="frame-maker">
+            <canvas id="framed"></canvas>
+            <input type='file' onchange="loadPicture(this);" />
+            <div class="crop-container">
+                <img id="profile-pic" src="">
+            </div>
+        </div>
+    </body>
+    <script src="./framer.js"></script>
+</html>
