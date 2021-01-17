@@ -81,7 +81,7 @@ const loadFrameImg = () => {
 
     // Fetch the frameImg src from the url paramaters
     // URL is structured like "?frameURL=" so we need to ignore the first 10 chars
-    frameImg.src = window.location.search.substr(10);
+    frameImg.src = decodeURIComponent(window.location.search.substr(10));
 }
 
 
