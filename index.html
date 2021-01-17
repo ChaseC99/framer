@@ -7,7 +7,12 @@
     <body>
         <div class="frame-maker">
             <canvas id="framed"></canvas>
-            <input type='file' onchange="loadPicture(this);" />
+            <div style="display: flex;">
+                <p style="margin: 0 5px 0 0;"><b>Step 1:</b> Select Profile Picture </p>
+                <input type='file' onchange="loadPicture(this);" />
+            </div>
+            <p><b>Step 2:</b> Crop your image</p>
+            <p><b>Step 3:</b> Right click the image above and save! :)</p>
             <div class="crop-container">
                 <img id="profile-pic" src="">
             </div>
