@@ -12,12 +12,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js" integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw==" crossorigin="anonymous"></script>
 
         <!-- Local Script -->
-        <script src="./framer.js"></script>
+        <script src="./framer.js" defer></script>
     </head>
     <body>
         <div id="navbar">
             <h1>Framer</h1>
+            <form id="form">
+                <input id="form-input" type="text" name="frameUrl" placeholder="Enter an image url">
+                <button type="submit">Generate Link</button>
+            </form>
             <div class="icons">
+                <a href="javascript:showLinkGenerator()"><img src="icons/plus.svg"/></a>
                 <a href="https://github.com/chasec99/framer#readme" target="_blank"><img src="icons/info.svg"/></a>
                 <a href="https://github.com/chasec99/framer" target="_blank"><img src="icons/github.png"/></a>
             </div>

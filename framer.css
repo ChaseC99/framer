@@ -13,6 +13,11 @@ body {
     background-color: darkseagreen;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
 .icons {
     display: flex;
     flex-direction: row;    
@@ -91,4 +96,15 @@ input[type="file"] {
     max-width: 45%;
     margin: auto;
     display: none;
+}
+
+form {
+    display: none;
+    align-items: center;
+    margin: auto;
+}
+
+form input {
+    width: 500px;
+    margin-right: 12px;
 }

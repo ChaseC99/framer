@@ -6,7 +6,7 @@ var frameImg;   // The frame for the image
 // ENTRY POINT
 // When the page loads, loadFrameImg will be called 
 // to load the frame into the canvas
-this.onload = (() => {loadFrameImg()})
+this.onload = (() => { loadFrameImg() })
 
 
 // GET CONTEXT
@@ -28,13 +28,13 @@ const drawFramedPic = (frame, pic) => {
 
     // Set size of the canvas for the framed picture
     // as the same sized of the framed image
-    const {height, width} = frame
+    const { height, width } = frame
     ctx.canvas.width = width
     ctx.canvas.height = height;
 
     // Draw the profile picture if it exists
-    if (pic && pic.width > 0 && pic.height > 0) { 
-        ctx.drawImage(pic, 0, 0, height, width); 
+    if (pic && pic.width > 0 && pic.height > 0) {
+        ctx.drawImage(pic, 0, 0, height, width);
     }
     // Draw the frame
     ctx.drawImage(frame, 0, 0);
@@ -45,14 +45,14 @@ const drawFramedPic = (frame, pic) => {
 // Using the profile-pic img, generate a cropper object around it
 const generateProfilePictureCropper = () => {
     const image = getProfilePic()
-    const {width, height} = frameImg;
+    const { width, height } = frameImg;
 
     // Show crop-containter
     document.getElementById("crop-container").style.display = "block"
 
     // Create the cropper object and save it to the global variable
-    cropper = new Cropper(image, { 
-        aspectRatio: width/height,
+    cropper = new Cropper(image, {
+        aspectRatio: width / height,
         zoomable: false,
         guides: false,
         background: false,
@@ -84,7 +84,13 @@ const loadFrameImg = () => {
 
     // Fetch the frameImg src from the url paramaters
     // URL is structured like "?frameURL=" so we need to ignore the first 10 chars
-    frameImg.src = decodeURIComponent(window.location.search.substr(10));
+    imageSrc = decodeURIComponent(window.location.search.substr(10))
+    
+    if (imageSrc === "") {
+        showLinkGenerator()
+    } else {
+        frameImg.src = decodeURIComponent(window.location.search.substr(10));
+    }
 }
 
 
@@ -113,5 +119,10 @@ const loadPicture = (input) => {
 const downloadFramedPicture = () => {
     var canvas = document.getElementById("framed");
     image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
-    window.location.href=image; 
+    window.location.href = image;
+}
+
+const showLinkGenerator = () => {
+    const form = document.getElementById("form");
+    form.style.display = "flex"   
 }
