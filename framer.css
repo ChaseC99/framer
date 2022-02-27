@@ -1,17 +1,78 @@
+body {
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px;
+    background-color: darkseagreen;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;    
+}
+
+.icons a {
+    margin: 0 5px;
+}
+
+.instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.instructions div {
+    width: 33%;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.select-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.select-pic label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+.frame-maker {
+    display: flex;
+}
+
 #profile-pic {
     display:block;
     max-width: 100%;
 }
 
 #framed {
-    margin: 50px auto;
-    max-height: 70vh;
+    margin: 0 auto;
+    width: 45%;
+    height: 100%;
     display: block;
     border-style: solid;
     border-width: thin;
 }
 
-.crop-container {
-    max-width: 50%;
-    margin: 50px auto;
+#crop-container {
+    max-width: 45%;
+    margin: auto;
+    display: none;
 }

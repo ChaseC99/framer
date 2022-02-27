@@ -47,6 +47,9 @@ const generateProfilePictureCropper = () => {
     const image = getProfilePic()
     const {width, height} = frameImg;
 
+    // Show crop-containter
+    document.getElementById("crop-container").style.display = "block"
+
     // Create the cropper object and save it to the global variable
     cropper = new Cropper(image, { 
         aspectRatio: width/height,

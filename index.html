@@ -1,21 +1,33 @@
 <html>
-    <header>
+    <head>
         <link rel="stylesheet" href="framer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css" integrity="sha512-w+u2vZqMNUVngx+0GVZYM21Qm093kAexjueWOv9e9nIeYJb1iEfiHC7Y+VvmP/tviQyA5IR32mwN/5hTEJx6Ng==" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js" integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw==" crossorigin="anonymous"></script>
-    </header>
+    </head>
     <body>
-        <div class="frame-maker">
-            <canvas id="framed"></canvas>
-            <div style="display: flex;">
-                <p style="margin: 0 5px 0 0;"><b>Step 1:</b> Select Profile Picture </p>
-                <input type='file' onchange="loadPicture(this);" />
+        <div id="navbar">
+            <h1>Framer</h1>
+            <div class="icons">
+                <a href="https://github.com/chasec99/framer#readme">Info</a>
+                <a href="https://github.com/chasec99/framer" target="_blank">Code</a>
             </div>
-            <p><b>Step 2:</b> Crop your image</p>
-            <p><b>Step 3:</b> Right click the image above and save! :)</p>
-            <div class="crop-container">
+        </div>
+        <div class="instructions">
+            <div><p><b>①</b> Select a picture</p></div>
+            <div><p><b>②</b> Crop your image</p></div>
+            <div><p><b>③</b> Right click the image and save! :)</p></div>
+        </div>
+        <div class="select-pic">
+            <label>
+                <input type='file' onchange="loadPicture(this);" />
+                Select Photo
+            </label>
+        </div>
+        <div class="frame-maker">
+            <div id="crop-container">
                 <img id="profile-pic" src="">
             </div>
+            <canvas id="framed"></canvas>
         </div>
     </body>
     <script src="./framer.js"></script>
