@@ -8,7 +8,7 @@ A simple website that can add a frame to an image.
 4. Share the generated url with your friends, so they can create their own images with your frame!
 
 _Example: [chasec.me/framer/?frameUrl=https://i.imgur.com/LIEaM7Y.png](https://chasec.me/framer/?frameUrl=https://i.imgur.com/LIEaM7Y.png)_
-<img width="1727" alt="Screenshot of the Framer website with an example photo" src="https://user-images.githubusercontent.com/29494270/155882425-cae3eb53-50be-4e46-bc2b-36bbab1fd1f6.png">
+![image](https://user-images.githubusercontent.com/29494270/155887196-ce97dcaa-4402-40eb-a848-fdd2fd784e1e.png)
 
 ## Develop Locally
 - `git clone git@github.com:ChaseC99/framer.git`
