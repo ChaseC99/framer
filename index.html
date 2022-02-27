@@ -1,21 +1,31 @@
 <html>
     <head>
         <link rel="stylesheet" href="framer.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <!-- Cropper Import -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css" integrity="sha512-w+u2vZqMNUVngx+0GVZYM21Qm093kAexjueWOv9e9nIeYJb1iEfiHC7Y+VvmP/tviQyA5IR32mwN/5hTEJx6Ng==" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js" integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw==" crossorigin="anonymous"></script>
+
+        <!-- Local Script -->
+        <script src="./framer.js"></script>
     </head>
     <body>
         <div id="navbar">
             <h1>Framer</h1>
             <div class="icons">
-                <a href="https://github.com/chasec99/framer#readme">Info</a>
-                <a href="https://github.com/chasec99/framer" target="_blank">Code</a>
+                <a href="https://github.com/chasec99/framer#readme" target="_blank"><img src="icons/info.svg"/></a>
+                <a href="https://github.com/chasec99/framer" target="_blank"><img src="icons/github.png"/></a>
             </div>
         </div>
         <div class="instructions">
-            <div><p><b>①</b> Select a picture</p></div>
-            <div><p><b>②</b> Crop your image</p></div>
-            <div><p><b>③</b> Right click the image and save! :)</p></div>
+            <div><p>①</p> Select a picture</div>
+            <div><p>②</p> Crop your image</div>
+            <div><p>③</p> Right click the image and save! :)</div>
         </div>
         <div class="select-pic">
             <label>
@@ -30,5 +40,4 @@
             <canvas id="framed"></canvas>
         </div>
     </body>
-    <script src="./framer.js"></script>
 </html>

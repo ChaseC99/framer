@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #navbar {
@@ -8,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 8px;
+    padding: 0 16px;
     background-color: darkseagreen;
 }
 
@@ -18,7 +19,12 @@ body {
 }
 
 .icons a {
-    margin: 0 5px;
+    margin: 0 10px;
+}
+
+.icons img, svg {
+    height: 35px;
+    width: 35px;
 }
 
 .instructions {
@@ -27,11 +33,21 @@ body {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto 20px auto;
+    font-size: 1.25em;
+}
+
+.instructions p {
+    font-size: 1.5em;
+    margin-right: 8px;
 }
 
 .instructions div {
     width: 33%;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="file"] {
@@ -49,7 +65,7 @@ input[type="file"] {
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     text-align: center;
 }
 
