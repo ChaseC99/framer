@@ -31,6 +31,11 @@
                 <input id="form-input" type="text" name="frameUrl" placeholder="Enter an image url">
                 <button type="submit">Generate Link</button>
             </form>
+            <div id="share-instr">
+                <img class="share-icon arrow-icon" src="icons/curvyArrow.svg">
+                <p>Share this frame's url with others</p>
+                <img class="share-icon" id="copy-icon" src="icons/copy.svg" onclick="copyToClipboard()">
+            </div>
             <div class="icons">
                 <a href="javascript:showLinkGenerator()"><img src="icons/plus.svg"/></a>
                 <a href="https://github.com/chasec99/framer#readme" target="_blank"><img src="icons/info.svg"/></a>

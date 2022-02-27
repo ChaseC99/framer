@@ -126,9 +126,35 @@ const downloadFramedPicture = () => {
 // SHOW LINK GENERATOR
 // This displays the form to input an image url
 const showLinkGenerator = () => {
+    // Show form
     const form = document.getElementById("form");
     form.style.display = "flex";
+
+    // Hide share instructions
+    const shareInstructions = document.getElementById("share-instr");
+    shareInstructions.style.display = "none";
 }
+
+
+// COPY TO CLIPBOARD
+// This copies the shareable url for the frame to the clipboard
+const copyToClipboard = () => {
+    // Copy the url to the clipboard
+    navigator.clipboard.writeText(window.location.href)
+
+    // Flicker the copy icon
+    const copyIcon = document.getElementById("copy-icon");
+    copyIcon.style.animation = "flickerAnimation 1s";
+
+    // Remove the flicker animation so it can be triggered again
+    // Timeout is set to 250ms, so this is removed after the animation finishes
+    setTimeout(() => {
+        const copyIcon = document.getElementById("copy-icon");
+        copyIcon.style.animation = "";
+    }, 400)
+    
+}
+
 
 // HIDE CONTENT
 // Hide the content on the screen
