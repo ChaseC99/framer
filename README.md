@@ -10,3 +10,10 @@ _Example: [chasec.me/framer/?frameUrl=https://i.imgur.com/LIEaM7Y.png](https://c
 ## Develop Locally
 - `git clone git@github.com:ChaseC99/framer.git`
 - Open `index.html` in a browser
+
+## Credits
+**Created by [Chase Carnaroli](chasecarnaroli.com)**
+
+### Resources
+- [Cropperjs](https://github.com/fengyuanchen/cropperjs)
+- [Google Fonts](https://fonts.google.com/)
