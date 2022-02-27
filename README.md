@@ -12,7 +12,7 @@ _Example: [chasec.me/framer/?frameUrl=https://i.imgur.com/LIEaM7Y.png](https://c
 - Open `index.html` in a browser
 
 ## Credits
-**Created by [Chase Carnaroli](chasecarnaroli.com)**
+**Created by [Chase Carnaroli](https://chasecarnaroli.com)**
 
 ### Resources
 - [Cropperjs](https://github.com/fengyuanchen/cropperjs)
