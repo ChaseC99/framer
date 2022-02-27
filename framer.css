@@ -133,9 +133,22 @@ form {
     display: none;
     align-items: center;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 form input {
     width: 500px;
     margin-right: 12px;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 30px;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    height: 30px;
+    border-style: solid;
 }
