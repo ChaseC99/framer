@@ -32,6 +32,10 @@ h1 {
     width: 35px;
 }
 
+#content {
+    display: block;
+}
+
 .instructions {
     display: flex;
     align-items: center;
@@ -62,7 +66,6 @@ input[type="file"] {
 .select-pic {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 .select-pic label {
@@ -76,6 +79,7 @@ input[type="file"] {
 
 .frame-maker {
     display: flex;
+    margin: 10px 0;
 }
 
 #profile-pic {

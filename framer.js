@@ -88,6 +88,7 @@ const loadFrameImg = () => {
     
     if (imageSrc === "") {
         showLinkGenerator()
+        hideContent()
     } else {
         frameImg.src = decodeURIComponent(window.location.search.substr(10));
     }
@@ -122,7 +123,17 @@ const downloadFramedPicture = () => {
     window.location.href = image;
 }
 
+// SHOW LINK GENERATOR
+// This displays the form to input an image url
 const showLinkGenerator = () => {
     const form = document.getElementById("form");
-    form.style.display = "flex"   
+    form.style.display = "flex";
+}
+
+// HIDE CONTENT
+// Hide the content on the screen
+// This is called when there is no image url
+const hideContent = () => {
+    const form = document.getElementById("content");
+    form.style.display = "none";
 }

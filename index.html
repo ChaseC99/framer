@@ -27,22 +27,24 @@
                 <a href="https://github.com/chasec99/framer" target="_blank"><img src="icons/github.png"/></a>
             </div>
         </div>
-        <div class="instructions">
-            <div><p>①</p> Select a picture</div>
-            <div><p>②</p> Crop your image</div>
-            <div><p>③</p> Right click the image and save! :)</div>
-        </div>
-        <div class="select-pic">
-            <label>
-                <input type='file' onchange="loadPicture(this);" />
-                Select Photo
-            </label>
-        </div>
-        <div class="frame-maker">
-            <div id="crop-container">
-                <img id="profile-pic" src="">
+        <div id="content">
+            <div class="instructions">
+                <div><p>①</p> Select a photo</div>
+                <div><p>②</p> Crop your image</div>
+                <div><p>③</p> Right click the image and save! :)</div>
             </div>
-            <canvas id="framed"></canvas>
+            <div class="select-pic">
+                <label>
+                    <input type='file' onchange="loadPicture(this);" />
+                    Select Photo
+                </label>
+            </div>
+            <div class="frame-maker">
+                <div id="crop-container">
+                    <img id="profile-pic" src="">
+                </div>
+                <canvas id="framed"></canvas>
+            </div>
         </div>
     </body>
 </html>
