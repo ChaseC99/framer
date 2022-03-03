@@ -138,17 +138,24 @@ form {
 
 form input {
     width: 500px;
-    margin-right: 12px;
     border-radius: 10px;
     padding-left: 10px;
     height: 30px;
     border-style: none;
     font-family: 'Montserrat', sans-serif;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 form button {
     font-family: 'Montserrat', sans-serif;
     border-radius: 10px;
     height: 30px;
-    border-style: solid;
+    border-style: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+form button:hover {
+    cursor: pointer;
 }
