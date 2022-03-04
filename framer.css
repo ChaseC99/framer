@@ -133,18 +133,16 @@ form {
     display: none;
     align-items: center;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
 }
 
 form input {
     width: 500px;
     border-radius: 10px;
+    margin-right: 12px;
     padding-left: 10px;
     height: 30px;
     border-style: none;
     font-family: 'Montserrat', sans-serif;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 form button {
@@ -152,8 +150,6 @@ form button {
     border-radius: 10px;
     height: 30px;
     border-style: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 form button:hover {
